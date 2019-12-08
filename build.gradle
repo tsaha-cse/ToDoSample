@@ -5,10 +5,9 @@ buildscript {
     repositories {
         google()
         jcenter()
-        
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.1'
+        classpath 'com.android.tools.build:gradle:3.5.3'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -19,10 +18,19 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+        maven { url 'https://jitpack.io' }
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+ext {
+    androidxVersion = '1.1.0'
+    roomVersion = '2.2.2'
+    archLifecycleVersion = '2.2.0-rc03'
+    coroutines = '0.26.1'
+    koin = '1.0.2'
+    maskEditText = '1.1.1'
 }

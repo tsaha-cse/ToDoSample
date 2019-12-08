@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ToDoSample</string>
+    <string name="hint_task_title">Enter task title</string>
+    <string name="hint_task_due_date">Enter due date (DD/MM/YY)</string>
+    <string name="title_create_task">Create Task</string>
+    <string name="title_update_task">Update Task</string>
+    <string name="btn_dialog_update">Update</string>
+    <string name="btn_dialog_delete">Delete</string>
+    <string name="task_title">%s</string>
+    <string name="task_due_date">Due date: %s</string>
 </resources>
